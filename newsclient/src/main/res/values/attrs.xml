@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+		先要创建变量，创建了个values/attrs.xml文件，文件名任意，但是要在values目录下：
+		根标签要是resources，定义的变量要有个名字，declare-styleable name="rightPadding">，
+		这里定义名称为rightPadding。在这个名称里，可以有多个自定义属性。定义了个名为textSize的属性，
+		格式是dimension，这个format指定了textSize属性的类型，只能用于定义字体大小。
+    -->
+    <attr name="rightPadding" format="dimension"></attr>
+
+    <!-- declare-styleable name=自定义类名，attr name=属性名 -->
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding"></attr>
+    </declare-styleable>
+
+</resources>
